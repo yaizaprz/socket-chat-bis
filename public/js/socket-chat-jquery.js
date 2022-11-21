@@ -24,7 +24,7 @@ function renderizarUsuarios( personas ){ // [{}, {}, {}]
 
   for(var i=0;i<personas.length;i++){
     html+='<li>';
-    html+=`<a data-id="${personas[i].id}" href="javascript:void(0)"><img src="assets/images/users/1.jpg" alt="user-img" class="img-circle"> <span> ${ personas[i].nombre } <small class="text-success">online</small></span></a>`
+    html+=`<a data-id="${personas[i].id}" href="javascript:void(0)"><img src="assets/images/users/images.jpg" alt="user-img" class="img-circle"> <span> ${ personas[i].nombre } <small class="text-success">online</small></span></a>`
     html+='</li>'
   }
   divUsuarios.html(html);
@@ -48,7 +48,7 @@ function renderizarMensajes(mensaje, yo){
     html+=   '<h5>'+mensaje.nombre+'</h5>';
     html+=   '<div class="box bg-light-inverse">'+mensaje.mensaje+'</div>';
     html+=  '</div>';
-    html+= '<div class="chat-img"><img src="assets/images/users/5.jpg" alt="user" /></div>';
+    html+= '<div class="chat-img"><img src="assets/images/users/images.jpg" alt="user" /></div>';
     html+= '<div class="chat-time">'+hora+'</div>';
     html+='</li>';
 
@@ -56,7 +56,7 @@ function renderizarMensajes(mensaje, yo){
 
     html += '<li class="animated fadeIn">';
     if( mensaje.nombre !== 'Administrador'){
-      html += '<div class="chat-img"><img src="assets/images/users/1.jpg" alt="user" /></div>';
+      html += '<div class="chat-img"><img src="assets/images/users/quokka.jpg" alt="user" /></div>';
     }
     html +=  '<div class="chat-content">';
     html +=  '<h5>'+mensaje.nombre+'</h5>';
